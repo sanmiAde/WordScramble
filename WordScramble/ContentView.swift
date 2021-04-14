@@ -16,6 +16,8 @@ struct ContentView: View {
     @State private var errorTitle = ""
     @State private var showingError = false
     
+    @State private var userScore = 0
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -36,6 +38,8 @@ struct ContentView: View {
                     Image(systemName: "\($0.count).circle")
                     Text($0)
                 }
+                
+                Text("user score \(userScore)")
             }
             .navigationTitle(rootWord)
             .onAppear(perform: {
@@ -76,6 +80,7 @@ struct ContentView: View {
             return
         }
         
+        userScore += answer.count
         usedWords.insert(answer, at: 0)
         newWord = ""
     }
