@@ -19,10 +19,18 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                TextField("Enter your word", text: $newWord, onCommit: addNewWord)
+                HStack {
+                    Button("Restart") {
+                        startGame()
+                        usedWords.removeAll()
+                    }.padding()
+                    
+                    TextField("Enter your word", text: $newWord, onCommit: addNewWord)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
                     .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                    
+                }
                 
                 List(usedWords, id: \.self) {
                     Image(systemName: "\($0.count).circle")
