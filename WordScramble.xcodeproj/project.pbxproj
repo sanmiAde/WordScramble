@@ -13,6 +13,7 @@
 		860F7EA42624163000357E0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 860F7EA32624163000357E0D /* Preview Assets.xcassets */; };
 		860F7EAF2624163100357E0D /* WordScrambleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860F7EAE2624163100357E0D /* WordScrambleTests.swift */; };
 		860F7EBA2624163100357E0D /* WordScrambleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860F7EB92624163100357E0D /* WordScrambleUITests.swift */; };
+		86A24B0D2625631C009CAC40 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 86A24B0C2625631C009CAC40 /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		860F7EB52624163100357E0D /* WordScrambleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordScrambleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		860F7EB92624163100357E0D /* WordScrambleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleUITests.swift; sourceTree = "<group>"; };
 		860F7EBB2624163100357E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86A24B0C2625631C009CAC40 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = start.txt; path = "../../HackingWithSwift/SwiftUI/project5-files/start.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				860F7E9E2624162E00357E0D /* ContentView.swift */,
 				860F7EA02624163000357E0D /* Assets.xcassets */,
 				860F7EA52624163000357E0D /* Info.plist */,
+				86A24B0C2625631C009CAC40 /* start.txt */,
 				860F7EA22624163000357E0D /* Preview Content */,
 			);
 			path = WordScramble;
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				860F7EA42624163000357E0D /* Preview Assets.xcassets in Resources */,
+				86A24B0D2625631C009CAC40 /* start.txt in Resources */,
 				860F7EA12624163000357E0D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
