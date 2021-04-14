@@ -25,6 +25,8 @@ struct ContentView: View {
                     Button("Restart") {
                         startGame()
                         usedWords.removeAll()
+                        newWord = ""
+                        userScore = 0
                     }.padding()
                     
                     TextField("Enter your word", text: $newWord, onCommit: addNewWord)
